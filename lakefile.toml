@@ -1,0 +1,22 @@
+name = "LieTheory"
+version = "0.1.0"
+keywords = ["math"]
+defaultTargets = ["LieTheory", "Main"]
+
+[leanOptions]
+pp.unicode.fun = true # pretty-prints `fun a ↦ b`
+relaxedAutoImplicit = false
+weak.linter.mathlibStandardSet = true
+maxSynthPendingDepth = 3
+
+[[require]]
+name = "mathlib"
+scope = "leanprover-community"
+rev = "v4.32.0"
+
+[[lean_lib]]
+name = "LieTheory"
+
+[[lean_exe]]
+name = "Main"
+root = "Main"
