@@ -1,9 +1,9 @@
 /-
-Copyright (c) 2026 LieTheory contributors. All rights reserved.
+Copyright (c) 2026 SL2RepresentationTheory contributors. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
-Authors: LieTheory contributors
+Authors: SL2RepresentationTheory contributors
 -/
-import LieTheory.Sl2Classification.HighestWeight
+import SL2RepresentationTheory.Sl2Classification.HighestWeight
 
 /-!
 # Linear independence and the highest-weight basis
@@ -13,7 +13,7 @@ distinct eigenvalues. This gives linear independence without introducing any
 additional spectral theory.
 -/
 
-namespace LieTheory.Sl2Classification
+namespace SL2RepresentationTheory.Sl2Classification
 
 open LieModule Set Submodule
 
@@ -272,4 +272,4 @@ theorem exists_unique_highestWeight_basis [IsAlgClosed K] [Nontrivial M]
   intro m hm
   exact (highestWeight_unique (K := K) (M := M) hn hm).symm
 
-end LieTheory.Sl2Classification
+end SL2RepresentationTheory.Sl2Classification

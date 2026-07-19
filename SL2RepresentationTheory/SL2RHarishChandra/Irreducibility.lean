@@ -1,13 +1,13 @@
 /-
-Copyright (c) 2026 LieTheory contributors. All rights reserved.
+Copyright (c) 2026 SL2RepresentationTheory contributors. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
-Authors: LieTheory contributors
+Authors: SL2RepresentationTheory contributors
 -/
-import LieTheory.SL2RHarishChandra.ModelProperties
+import SL2RepresentationTheory.SL2RHarishChandra.ModelProperties
 
 /-! # Irreducibility of the four explicit `SL₂(ℝ)` models -/
 
-namespace LieTheory.SL2RHarishChandra
+namespace SL2RepresentationTheory.SL2RHarishChandra
 
 noncomputable section
 
@@ -312,4 +312,4 @@ noncomputable instance trivial_isIrreducible :
 
 end
 
-end LieTheory.SL2RHarishChandra
+end SL2RepresentationTheory.SL2RHarishChandra

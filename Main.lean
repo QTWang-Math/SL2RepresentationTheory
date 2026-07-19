@@ -1,19 +1,19 @@
 /-
-Copyright (c) 2026 LieTheory contributors. All rights reserved.
+Copyright (c) 2026 SL2RepresentationTheory contributors. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
-Authors: LieTheory contributors
+Authors: SL2RepresentationTheory contributors
 -/
 import Mathlib
-import LieTheory.Basic
+import SL2RepresentationTheory.Basic
 
 /-!
-# LieTheory smoke tests
+# SL2RepresentationTheory smoke tests
 
 These examples check basic algebra, mathlib's group/ring hierarchy, and the
 standard commutator Lie algebra on square matrices.
 -/
 
-open LieTheory
+open SL2RepresentationTheory
 
 attribute [local instance 100] LieRing.ofAssociativeRing
 
@@ -46,4 +46,4 @@ example (A B : gl ℚ 2) : ⁅A, B⁆ = -⁅B, A⁆ := by
   exact (lie_skew A B).symm
 
 def main : IO Unit :=
-  IO.println "LieTheory: Lean 4 and mathlib are configured successfully."
+  IO.println "SL2RepresentationTheory: Lean 4 and mathlib are configured successfully."

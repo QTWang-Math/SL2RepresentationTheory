@@ -1,14 +1,14 @@
 /-
-Copyright (c) 2026 LieTheory contributors. All rights reserved.
+Copyright (c) 2026 SL2RepresentationTheory contributors. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
-Authors: LieTheory contributors
+Authors: SL2RepresentationTheory contributors
 -/
-import LieTheory.SL2RHarishChandra.Support
+import SL2RepresentationTheory.SL2RHarishChandra.Support
 import Mathlib.Algebra.Lie.Semisimple.Defs
 
 /-! # Parity decomposition for algebraic `SL₂(ℝ)` modules -/
 
-namespace LieTheory.SL2RHarishChandra
+namespace SL2RepresentationTheory.SL2RHarishChandra
 
 variable (M : Type*) [AddCommGroup M] [Module ℂ M]
 variable [LieRingModule sl2Compact M] [LieModule ℂ sl2Compact M]
@@ -144,4 +144,4 @@ theorem irreducible_support_has_fixed_parity [LieModule.IsIrreducible ℂ sl2Com
   · exact Or.inl fun _ hn => support_even_of_even_eq_top M he hn
   · exact Or.inr fun _ hn => support_odd_of_odd_eq_top M ho hn
 
-end LieTheory.SL2RHarishChandra
+end SL2RepresentationTheory.SL2RHarishChandra

@@ -1,14 +1,14 @@
 /-
-Copyright (c) 2026 LieTheory contributors. All rights reserved.
+Copyright (c) 2026 SL2RepresentationTheory contributors. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
-Authors: LieTheory contributors
+Authors: SL2RepresentationTheory contributors
 -/
-import LieTheory.SL2RHarishChandra.Representation
+import SL2RepresentationTheory.SL2RHarishChandra.Representation
 import Mathlib.LinearAlgebra.Finsupp.VectorSpace
 
 /-! # The four algebraic rho-infinitesimal-character models for `SL₂(ℝ)` -/
 
-namespace LieTheory.SL2RHarishChandra
+namespace SL2RepresentationTheory.SL2RHarishChandra
 
 inductive RhoIrrepClass
   | trivial
@@ -362,4 +362,4 @@ theorem trivial_hasRhoInfinitesimalCharacter : HasRhoInfinitesimalCharacter Triv
 
 end
 
-end LieTheory.SL2RHarishChandra
+end SL2RepresentationTheory.SL2RHarishChandra

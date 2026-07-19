@@ -1,13 +1,13 @@
 /-
-Copyright (c) 2026 LieTheory contributors. All rights reserved.
+Copyright (c) 2026 SL2RepresentationTheory contributors. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
-Authors: LieTheory contributors
+Authors: SL2RepresentationTheory contributors
 -/
-import LieTheory.SL2RHarishChandra.Parity
+import SL2RepresentationTheory.SL2RHarishChandra.Parity
 
 /-! # Building representations of the fixed `sl₂Compact` from three operators -/
 
-namespace LieTheory.SL2RHarishChandra
+namespace SL2RepresentationTheory.SL2RHarishChandra
 
 variable {V : Type*} [AddCommGroup V] [Module ℂ V]
 
@@ -77,4 +77,4 @@ def sl2LieHomOfOperators (h e f : Module.End ℂ V)
     rw [hXdiag, hYdiag]
     module
 
-end LieTheory.SL2RHarishChandra
+end SL2RepresentationTheory.SL2RHarishChandra

@@ -1,3 +1,0 @@
-import LieTheory.Basic
-import LieTheory.Sl2Classification.Classification
-import LieTheory.SL2RHarishChandra.FinalClassification

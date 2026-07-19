@@ -1,7 +1,7 @@
 /-
-Copyright (c) 2026 LieTheory contributors. All rights reserved.
+Copyright (c) 2026 SL2RepresentationTheory contributors. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
-Authors: LieTheory contributors
+Authors: SL2RepresentationTheory contributors
 -/
 import Mathlib.Algebra.Lie.Classical
 import Mathlib.Algebra.Lie.Sl2
@@ -23,7 +23,7 @@ Cartan generator.  No topology, real Lie group action, or analytic
 representation is introduced here.
 -/
 
-namespace LieTheory.SL2RHarishChandra
+namespace SL2RepresentationTheory.SL2RHarishChandra
 
 open Matrix
 
@@ -117,4 +117,4 @@ theorem toLieSubalgebra_eq_top : isSl2Triple.toLieSubalgebra ℂ = ⊤ := by
   rw [lie_E_F]
   simpa [add_assoc, add_left_comm, add_comm] using decompose X
 
-end LieTheory.SL2RHarishChandra
+end SL2RepresentationTheory.SL2RHarishChandra

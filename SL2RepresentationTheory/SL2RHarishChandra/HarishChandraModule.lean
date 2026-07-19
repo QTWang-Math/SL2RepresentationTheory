@@ -1,9 +1,9 @@
 /-
-Copyright (c) 2026 LieTheory contributors. All rights reserved.
+Copyright (c) 2026 SL2RepresentationTheory contributors. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
-Authors: LieTheory contributors
+Authors: SL2RepresentationTheory contributors
 -/
-import LieTheory.SL2RHarishChandra.Casimir
+import SL2RepresentationTheory.SL2RHarishChandra.Casimir
 import Mathlib.LinearAlgebra.Finsupp.Span
 
 /-!
@@ -14,7 +14,7 @@ This file is deliberately specialized to the Harish--Chandra pair
 direct sum of the integral eigenspaces of the fixed element `H`.
 -/
 
-namespace LieTheory.SL2RHarishChandra
+namespace SL2RepresentationTheory.SL2RHarishChandra
 
 variable (M : Type*) [AddCommGroup M] [Module ℂ M]
 variable [LieRingModule sl2Compact M] [LieModule ℂ sl2Compact M]
@@ -50,4 +50,4 @@ theorem kWeightSpaces_iSupIndep : iSupIndep (KWeightSpace M) := by
   exact (HAction M).eigenspaces_iSupIndep.comp (Int.cast_injective :
     Function.Injective (fun n : ℤ => (n : ℂ)))
 
-end LieTheory.SL2RHarishChandra
+end SL2RepresentationTheory.SL2RHarishChandra

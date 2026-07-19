@@ -1,9 +1,9 @@
 /-
-Copyright (c) 2026 LieTheory contributors. All rights reserved.
+Copyright (c) 2026 SL2RepresentationTheory contributors. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
-Authors: LieTheory contributors
+Authors: SL2RepresentationTheory contributors
 -/
-import LieTheory.SL2RHarishChandra.CompactBasis
+import SL2RepresentationTheory.SL2RHarishChandra.CompactBasis
 import Mathlib.LinearAlgebra.Eigenspace.Basic
 
 /-!
@@ -14,7 +14,7 @@ algebra `sl2Compact`.  The integer grading is the algebraic replacement for
 the `SO(2)`-finite action; no general theory of weights is introduced.
 -/
 
-namespace LieTheory.SL2RHarishChandra
+namespace SL2RepresentationTheory.SL2RHarishChandra
 
 open LieModule
 
@@ -48,4 +48,4 @@ theorem F_mem_KWeightSpace {n : ℤ} {v : M} (hv : v ∈ KWeightSpace M n) :
   push_cast
   module
 
-end LieTheory.SL2RHarishChandra
+end SL2RepresentationTheory.SL2RHarishChandra

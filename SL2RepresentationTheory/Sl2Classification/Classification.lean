@@ -1,9 +1,9 @@
 /-
-Copyright (c) 2026 LieTheory contributors. All rights reserved.
+Copyright (c) 2026 SL2RepresentationTheory contributors. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
-Authors: LieTheory contributors
+Authors: SL2RepresentationTheory contributors
 -/
-import LieTheory.Sl2Classification.StringBasis
+import SL2RepresentationTheory.Sl2Classification.StringBasis
 
 /-!
 # Classification of finite-dimensional irreducible `sl₂` modules
@@ -21,7 +21,7 @@ primitive vector and the four string results in
 `pow_toEnd_f_eq_zero_of_eq_nat`.
 -/
 
-namespace LieTheory.Sl2Classification
+namespace SL2RepresentationTheory.Sl2Classification
 
 universe u v w
 
@@ -40,4 +40,4 @@ theorem finiteDimensional_irreducible_classification
     ∃! n : ℕ, HasHighestWeightBasis (K := K) (M := M) t n :=
   exists_unique_highestWeight_basis t hgen
 
-end LieTheory.Sl2Classification
+end SL2RepresentationTheory.Sl2Classification

@@ -1,9 +1,9 @@
 /-
-Copyright (c) 2026 LieTheory contributors. All rights reserved.
+Copyright (c) 2026 SL2RepresentationTheory contributors. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
-Authors: LieTheory contributors
+Authors: SL2RepresentationTheory contributors
 -/
-import LieTheory.Sl2Classification.Basic
+import SL2RepresentationTheory.Sl2Classification.Basic
 
 /-!
 # Highest-weight vectors and the `sl₂` string
@@ -12,7 +12,7 @@ This file packages the primitive-vector results from `Mathlib.Algebra.Lie.Sl2`
 with a natural-number highest weight.
 -/
 
-namespace LieTheory.Sl2Classification
+namespace SL2RepresentationTheory.Sl2Classification
 
 open LieModule
 
@@ -85,4 +85,4 @@ theorem stringVector_succ_weight_eq_zero
 
 end HighestWeightVector
 
-end LieTheory.Sl2Classification
+end SL2RepresentationTheory.Sl2Classification

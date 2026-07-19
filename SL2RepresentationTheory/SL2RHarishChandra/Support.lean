@@ -1,9 +1,9 @@
 /-
-Copyright (c) 2026 LieTheory contributors. All rights reserved.
+Copyright (c) 2026 SL2RepresentationTheory contributors. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
-Authors: LieTheory contributors
+Authors: SL2RepresentationTheory contributors
 -/
-import LieTheory.SL2RHarishChandra.HarishChandraModule
+import SL2RepresentationTheory.SL2RHarishChandra.HarishChandraModule
 
 /-!
 # Weight transitions and support barriers for `SL₂(ℝ)`
@@ -13,7 +13,7 @@ integer K-types of an algebraic `SL₂(ℝ)` module.  The Casimir relations show
 that these maps are injective whenever the corresponding scalar is nonzero.
 -/
 
-namespace LieTheory.SL2RHarishChandra
+namespace SL2RepresentationTheory.SL2RHarishChandra
 
 variable (M : Type*) [AddCommGroup M] [Module ℂ M]
 variable [LieRingModule sl2Compact M] [LieModule ℂ sl2Compact M]
@@ -218,4 +218,4 @@ theorem odd_support_propagates_down
       apply hedge.mp
       convert ih using 1 <;> push_cast <;> ring
 
-end LieTheory.SL2RHarishChandra
+end SL2RepresentationTheory.SL2RHarishChandra

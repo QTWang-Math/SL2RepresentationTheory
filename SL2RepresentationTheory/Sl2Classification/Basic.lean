@@ -1,7 +1,7 @@
 /-
-Copyright (c) 2026 LieTheory contributors. All rights reserved.
+Copyright (c) 2026 SL2RepresentationTheory contributors. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
-Authors: LieTheory contributors
+Authors: SL2RepresentationTheory contributors
 -/
 import Mathlib.Algebra.Lie.Sl2
 import Mathlib.Algebra.Lie.Semisimple.Defs
@@ -16,7 +16,7 @@ Mathlib already proves the primitive-vector existence theorem and all three
 classification on top of those results.
 -/
 
-namespace LieTheory.Sl2Classification
+namespace SL2RepresentationTheory.Sl2Classification
 
 open LieModule
 
@@ -31,4 +31,4 @@ the ambient Lie algebra. -/
 def IsGenerating (t : IsSl2Triple h e f) : Prop :=
   t.toLieSubalgebra K = ⊤
 
-end LieTheory.Sl2Classification
+end SL2RepresentationTheory.Sl2Classification

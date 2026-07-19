@@ -1,26 +1,26 @@
-# LieTheory
+# SL2RepresentationTheory
 
 A Lean 4 + mathlib project for formalizing Lie theory.
 
 ## Layout
 
 - `Main.lean`: executable smoke tests for algebra, groups, rings, and matrix Lie algebras.
-- `LieTheory.lean`: root module of the reusable library.
-- `LieTheory/Basic.lean`: initial reusable Lie algebra definitions.
-- `LieTheory/Sl2Classification/Basic.lean`: generating-triple hypothesis and API imports.
-- `LieTheory/Sl2Classification/HighestWeight.lean`: primitive vectors and `sl₂` string formulas.
-- `LieTheory/Sl2Classification/StringBasis.lean`: linear independence, invariant span, basis, dimension, and uniqueness.
-- `LieTheory/Sl2Classification/Classification.lean`: public highest-weight classification theorem.
-- `LieTheory/SL2RHarishChandra/CompactBasis.lean`: the compact `H,E,F` basis of `sl₂(ℂ)`.
-- `LieTheory/SL2RHarishChandra/Casimir.lean`: the normalization
+- `SL2RepresentationTheory.lean`: root module of the reusable library.
+- `SL2RepresentationTheory/Basic.lean`: initial reusable Lie algebra definitions.
+- `SL2RepresentationTheory/Sl2Classification/Basic.lean`: generating-triple hypothesis and API imports.
+- `SL2RepresentationTheory/Sl2Classification/HighestWeight.lean`: primitive vectors and `sl₂` string formulas.
+- `SL2RepresentationTheory/Sl2Classification/StringBasis.lean`: linear independence, invariant span, basis, dimension, and uniqueness.
+- `SL2RepresentationTheory/Sl2Classification/Classification.lean`: public highest-weight classification theorem.
+- `SL2RepresentationTheory/SL2RHarishChandra/CompactBasis.lean`: the compact `H,E,F` basis of `sl₂(ℂ)`.
+- `SL2RepresentationTheory/SL2RHarishChandra/Casimir.lean`: the normalization
   `C = H² + 2H + 4FE` and its centrality and weight formulas.
-- `LieTheory/SL2RHarishChandra/HarishChandraModule.lean`: the specialized
+- `SL2RepresentationTheory/SL2RHarishChandra/HarishChandraModule.lean`: the specialized
   algebraic K-finite/admissible model for `(sl₂(ℂ), SO(2))`.
-- `LieTheory/SL2RHarishChandra/Models.lean`: the four explicit Finsupp models.
-- `LieTheory/SL2RHarishChandra/Irreducibility.lean`: irreducibility of all four models.
-- `LieTheory/SL2RHarishChandra/Classification.lean`: barrier and seed-vector classification.
-- `LieTheory/SL2RHarishChandra/ModelEquivalences.lean`: explicit model maps and Lie-module equivalences.
-- `LieTheory/SL2RHarishChandra/FinalClassification.lean`: uniqueness, multiplicity one,
+- `SL2RepresentationTheory/SL2RHarishChandra/Models.lean`: the four explicit Finsupp models.
+- `SL2RepresentationTheory/SL2RHarishChandra/Irreducibility.lean`: irreducibility of all four models.
+- `SL2RepresentationTheory/SL2RHarishChandra/Classification.lean`: barrier and seed-vector classification.
+- `SL2RepresentationTheory/SL2RHarishChandra/ModelEquivalences.lean`: explicit model maps and Lie-module equivalences.
+- `SL2RepresentationTheory/SL2RHarishChandra/FinalClassification.lean`: uniqueness, multiplicity one,
   support classification, and the final four-class theorem.
 - `lakefile.toml`: Lake package, mathlib dependency, library, and executable targets.
 - `lean-toolchain`: exact Lean toolchain used by both Lake and the VSCode extension.

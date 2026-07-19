@@ -1,17 +1,17 @@
 /-
-Copyright (c) 2026 LieTheory contributors. All rights reserved.
+Copyright (c) 2026 SL2RepresentationTheory contributors. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
-Authors: LieTheory contributors
+Authors: SL2RepresentationTheory contributors
 -/
 import Mathlib
 
 /-!
-# LieTheory.Basic
+# SL2RepresentationTheory.Basic
 
 Small reusable definitions with which to start the Lie theory development.
 -/
 
-namespace LieTheory
+namespace SL2RepresentationTheory
 
 attribute [local instance 100] LieRing.ofAssociativeRing
 
@@ -28,4 +28,4 @@ example (K : Type*) [Field K] : LieAlgebra K (AbelianLieAlgebra K) :=
 example (K : Type*) [Field K] (n : ℕ) : LieAlgebra K (gl K n) :=
   inferInstance
 
-end LieTheory
+end SL2RepresentationTheory

@@ -1,9 +1,9 @@
 /-
-Copyright (c) 2026 LieTheory contributors. All rights reserved.
+Copyright (c) 2026 SL2RepresentationTheory contributors. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
-Authors: LieTheory contributors
+Authors: SL2RepresentationTheory contributors
 -/
-import LieTheory.SL2RHarishChandra.KTypes
+import SL2RepresentationTheory.SL2RHarishChandra.KTypes
 import Mathlib.Tactic.NoncommRing
 
 /-!
@@ -18,7 +18,7 @@ by zero.  This is the central character of the trivial representation in this
 normalization.
 -/
 
-namespace LieTheory.SL2RHarishChandra
+namespace SL2RepresentationTheory.SL2RHarishChandra
 
 open LieModule
 
@@ -187,4 +187,4 @@ theorem rho_E_F_formula {n : ℤ} {v : M}
         -((n : ℂ) • (n : ℂ) • v - 2 • (n : ℂ) • v) := hcomp
     _ = -((n : ℂ) * ((n : ℂ) - 2)) • v := by module
 
-end LieTheory.SL2RHarishChandra
+end SL2RepresentationTheory.SL2RHarishChandra
